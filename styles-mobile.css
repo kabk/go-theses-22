@@ -1,0 +1,259 @@
+@media screen and (max-width: 844px) {
+
+  @font-face {
+    font-family: SpaceGrotesk;
+    src: url("fonts/SpaceGrotesk.ttf");
+  }
+
+  *::-webkit-scrollbar {display: none;}
+  * {-ms-overflow-style: none;
+        scrollbar-width: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;}
+
+  html, body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    overscroll-behavior: none;
+    overscroll-behavior-x: none;
+    width:100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0;
+    margin-bottom:0;
+    padding:0;
+    background: #f4f0ec;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    overflow-y: scroll !important;
+    overflow-x : hidden !important;
+  }
+
+  .all-projects {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin:0;
+    white-space: nowrap;
+    overflow-x:hidden !important;
+  }
+
+  .project-spine {
+    display: block;
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    box-shadow: 0rem 0px 3.25rem #808080;
+  }
+
+  .vert{
+    transform: translateY(0) rotate(0);
+  }
+
+  .project-spine-content {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding:0.5em;
+    padding-bottom:2em;
+    right: 0rem;
+  }
+
+  .project-spine-content-active {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: 100%;
+    padding:0.5em;
+    padding-bottom:2em;
+    right: 0rem;
+  }
+
+  .title-text {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 1.5rem;
+    padding:1em;
+    font-family:SpaceGrotesk;
+    color:#202020;
+    text-align: left;
+    white-space: nowrap;
+    writing-mode: horizontal-tb;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    line-height:0.8;
+  }
+
+  #vertical-title{
+    writing-mode: horizontal-tb;
+  }
+
+  .abstract-text {
+    display:none;
+  }
+
+  .project-spine:hover{
+    background: #f4f0ec;
+  }
+
+  .project-spine:hover{
+   background-color: #DCDCDC; 
+  }
+  .project-spine:hover .title-text{
+  color: #202020;
+  } 
+
+  .all-projects .project-spine.active {
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    margin:0;
+    padding-top:0;
+    padding-bottom: 0.7rem;
+    position:relative;
+    z-index:3;
+  }
+  .project-spine.active .vert{
+    display: none;
+  }
+
+  .all-projects .project-spine.active .title-text {
+    display:none;
+    width:95%;
+    margin:0;
+    overflow: auto;
+    word-break: break-word;
+    white-space: normal;
+    padding-left: 0;
+    font-size: 1.5rem;
+    top: 0rem;
+    padding-bottom:1rem;
+    color: #DCDCDC;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    position: relative;
+    line-height:1.3;
+  }
+
+  .all-projects .project-spine.active .abstract-text {
+    display:inline-block;
+    margin:0;
+    width:95%;
+    overflow: auto;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 1rem;
+    color: #DCDCDC;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+
+  .all-projects .project-spine.active .student-name {
+    display:block;
+    margin:0;
+    width:95%;
+    overflow: auto;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 1rem;
+    color: #DCDCDC;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+
+.all-projects .project-spine.active .url {
+  padding-bottom:0rem;
+}
+
+  .all-projects .project-spine-always-active {
+    width: 100%;
+    height: auto;
+    background: #DCDCDC;
+    margin:0;
+    position:relative;
+    z-index:300;
+    box-shadow: 0rem 0px 3.25rem #808080;
+  }
+
+  #first{
+    width: 100%;
+    height:auto;
+    background: #DCDCDC;
+    margin:0;
+    position:relative;
+    z-index:3;
+  }
+
+  .all-projects .project-spine-always-active .title-text {
+    display:block;
+    width:95%;
+    margin:0;
+    word-break: break-word;
+    white-space: normal;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    line-height:1.3;
+    color: #202020;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+
+  .all-projects .project-spine-always-active .abstract-text {
+    display:inline-block;
+    margin: 0;
+    padding-top: 50px;
+    width:85%;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 1rem;
+    color: #202020;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    padding-left: 10px;
+    padding-bottom:10px;
+  }
+
+  .all-projects .project-spine-always-active .project-spine-content {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: 100%;
+    padding:0.5em;
+  }
+ 
+  #one{
+    padding-top: 80px; 
+    margin-top:2vh;
+  }
+
+  #two{
+    margin-top:2vh;
+  }
+
+  .active-desktop{
+    display: none !important;
+  }
+
+  .active-mobile{
+    display: block !important;
+  }
+}
