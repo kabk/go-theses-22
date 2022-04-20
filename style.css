@@ -223,7 +223,7 @@ html, body {
 
 .all-projects .project-spine-always-active {
   width: 25vw;
-  height: 100%;
+  height: 100vh;
   display:inline-block;
   position:relative;
   z-index:100;
