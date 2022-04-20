@@ -178,7 +178,7 @@ html, body {
   -moz-transform: none;
   transform: none;
   overflow-x:hidden !important;
-  overflow-y:scroll !important;
+  overflow-y:auto !important;
 }
 
 .all-projects .project-spine.active .student-name {
