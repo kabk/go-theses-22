@@ -212,7 +212,7 @@ html, body {
   transform: none;
   text-decoration:none;
   pointer-events:auto;
-  padding-bottom:0.5rem;
+  padding-bottom:1rem;
 }
 
 .all-projects .project-spine.active .url:hover .url:after {
